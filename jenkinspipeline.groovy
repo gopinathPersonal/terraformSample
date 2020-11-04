@@ -27,7 +27,7 @@ pipeline {
 			steps {
 				
 				sh'''
-					terraform init
+					terraform init -input=false
 				'''
 			} // Steps Completed
 		}  // Stage Completed
@@ -36,7 +36,7 @@ pipeline {
 			steps {
 				
 				sh'''
-					terraform apply
+					terraform apply -input=false -auto-approve
 				'''
 			} // Steps Completed
 		}  // Stage Completed

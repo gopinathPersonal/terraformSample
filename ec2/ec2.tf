@@ -13,7 +13,7 @@ resource "aws_instance" "Gopi_server" {
 }
 
 # Adding Instance as a Backend Server of LB
-resource "aws_elb_attachment" "Hitec_addec2" {
+resource "aws_elb_attachment" "Gopi_addec2" {
   elb      = var.elb
   instance = aws_instance.Gopi_server.id
 }

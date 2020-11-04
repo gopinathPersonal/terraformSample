@@ -11,7 +11,7 @@ resource "aws_vpc" "Gopi_VPC" {
 resource "aws_subnet" "Gopi_Public_subnet01" {
   vpc_id     = aws_vpc.Gopi_VPC.id
   cidr_block = var.subnet01_cidr
-  availability_zone_id = "use1-az1"
+  availability_zone_id = "use2-az1"
 
   tags = {
     Name = "Gopi_Public_subnet01"
@@ -22,7 +22,7 @@ resource "aws_subnet" "Gopi_Public_subnet01" {
 resource "aws_subnet" "Gopi_Private_subnet02" {
   vpc_id     = aws_vpc.Gopi_VPC.id
   cidr_block = var.subnet02_cidr
-  availability_zone_id = "use1-az2"
+  availability_zone_id = "use2-az2"
 
   tags = {
     Name = "Gopi_Private_subnet02"

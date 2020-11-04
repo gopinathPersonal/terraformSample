@@ -27,7 +27,7 @@ variable "ingress_3389" {
 }
 
 variable "ami_ec2" {
-  default = "ami-0528a5175983e7f28"
+  default = "ami-03657b56516ab7912"
 }
 
 variable "instance_type_ec2" {
